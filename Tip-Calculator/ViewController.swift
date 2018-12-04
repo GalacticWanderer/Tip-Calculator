@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadInChart()
+        
+        //TODO: seperate the chart from the input
+        //set them up as multi-page operations
+        //TODO: after the previous steps, integrate
+        //a setting page with some useful options
     }
     
   

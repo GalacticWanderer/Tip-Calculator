@@ -7,5 +7,6 @@ target 'Tip-Calculator' do
 
   # Pods for Tip-Calculator
 pod 'PieCharts'
+pod 'Charts'
 
 end

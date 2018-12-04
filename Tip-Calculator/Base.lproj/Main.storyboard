@@ -18,31 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ksF-WE-HJG">
-                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2FI-BS-4j3">
+                                <rect key="frame" x="8" y="28" width="359" height="631"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Hp-2H-VxI" customClass="PieChart" customModule="PieCharts">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="313"/>
-                                        <color key="backgroundColor" red="1" green="0.7628615326" blue="0.56595960909999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpH-iq-XPO">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="311.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRB-Ws-CjH">
-                                        <rect key="frame" x="0.0" y="314" width="355" height="313"/>
-                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRq-zB-HMg" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="319.5" width="359" height="311.5"/>
+                                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ksF-WE-HJG" secondAttribute="trailing" constant="10" id="eAZ-rE-n0c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ksF-WE-HJG" secondAttribute="bottom" constant="10" id="f0i-mF-MgC"/>
-                            <constraint firstItem="ksF-WE-HJG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="h9n-Us-0xm"/>
-                            <constraint firstItem="ksF-WE-HJG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hwS-FI-ols"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2FI-BS-4j3" secondAttribute="trailing" constant="8" id="4MH-Se-uSI"/>
+                            <constraint firstItem="2FI-BS-4j3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="8kK-Zj-NyB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2FI-BS-4j3" secondAttribute="bottom" constant="8" id="UtA-Bc-64c"/>
+                            <constraint firstItem="2FI-BS-4j3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="mId-rZ-1l4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="chartView" destination="6Hp-2H-VxI" id="7jg-iI-6UA"/>
+                        <outlet property="pieChart" destination="aRq-zB-HMg" id="poA-1M-46R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

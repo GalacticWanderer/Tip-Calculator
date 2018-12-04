@@ -8,34 +8,52 @@
 
 import UIKit
 import PieCharts
+import Charts
 
 class ViewController: UIViewController {
 
+    //outlet for the pieChartView
+  
+    @IBOutlet weak var pieChart: PieChartView!
+    
+    //vars to hold the meal, tip and total price
+    //meal and tips is being initialized as 0
+    var mealPrice = PieChartDataEntry(value: 0)
+    var tips = PieChartDataEntry(value: 0)
+    var totalCost = [PieChartDataEntry]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadInChart()
         
-        //TODO: seperate the chart from the input
-        //set them up as multi-page operations
-        //TODO: after the previous steps, integrate
-        //a setting page with some useful options
+        getChartData()
+        updateChartData()
+        
     }
+    
+    func getChartData(){
+        mealPrice.value = 80.0
+        mealPrice.label = "Meal cost"
+        
+        tips.value = 20.0
+        tips.label = "Tips"
+        
+        totalCost = [mealPrice, tips]
+    }
+    
+    func updateChartData(){
+        let chartDataSet = PieChartDataSet(values: totalCost, label: nil)
+        let chartData = PieChartData(dataSet: chartDataSet)
+        
+        let colors = [#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)]
+        chartDataSet.colors = colors
+        
+        pieChart.data = chartData
+    }
+    
+    
     
   
-    @IBOutlet weak var chartView: PieChart!
-    
-    func loadInChart(){
-        
-        //adding a line text overlay
-        chartView.layers = [PieLineTextLayer()]
-        
-        //insert the values + color of the slice
-        chartView.models = [
-            PieSliceModel(value: 3.2121, color: UIColor.brown),
-            PieSliceModel(value: 3.323, color: UIColor.blue),
-            PieSliceModel(value: 1.1212, color: UIColor.green)
-        ]
-    }
+
     
 
 }

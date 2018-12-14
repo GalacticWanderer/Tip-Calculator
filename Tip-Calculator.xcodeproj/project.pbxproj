@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AE47D1A24A4846246F49DDAF /* Pods_Tip_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3463B84E71DCB49B0B176A08 /* Pods_Tip_Calculator.framework */; };
+		C5191B1221C4242E0031CB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5191B1121C4242E0031CB95 /* Assets.xcassets */; };
 		C5FC826F21B5E3F400170D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC826E21B5E3F400170D57 /* AppDelegate.swift */; };
 		C5FC827121B5E3F400170D57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC827021B5E3F400170D57 /* ViewController.swift */; };
 		C5FC827421B5E3F400170D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FC827221B5E3F400170D57 /* Main.storyboard */; };
-		C5FC827621B5E3F500170D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FC827521B5E3F500170D57 /* Assets.xcassets */; };
 		C5FC827921B5E3F500170D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FC827721B5E3F500170D57 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +19,11 @@
 		1A2E228A516EBAB57258B5EE /* Pods-Tip-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		3463B84E71DCB49B0B176A08 /* Pods_Tip_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tip_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB847EC0D874B4C6808DC62 /* Pods-Tip-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tip-Calculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tip-Calculator/Pods-Tip-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		C5191B1121C4242E0031CB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FC826B21B5E3F400170D57 /* Tip-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FC826E21B5E3F400170D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5FC827021B5E3F400170D57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5FC827321B5E3F400170D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5FC827521B5E3F500170D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FC827821B5E3F500170D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FC827A21B5E3F500170D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,9 +81,9 @@
 				C5FC826E21B5E3F400170D57 /* AppDelegate.swift */,
 				C5FC827021B5E3F400170D57 /* ViewController.swift */,
 				C5FC827221B5E3F400170D57 /* Main.storyboard */,
-				C5FC827521B5E3F500170D57 /* Assets.xcassets */,
 				C5FC827721B5E3F500170D57 /* LaunchScreen.storyboard */,
 				C5FC827A21B5E3F500170D57 /* Info.plist */,
+				C5191B1121C4242E0031CB95 /* Assets.xcassets */,
 			);
 			path = "Tip-Calculator";
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5FC827921B5E3F500170D57 /* LaunchScreen.storyboard in Resources */,
-				C5FC827621B5E3F500170D57 /* Assets.xcassets in Resources */,
+				C5191B1221C4242E0031CB95 /* Assets.xcassets in Resources */,
 				C5FC827421B5E3F400170D57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
